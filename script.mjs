@@ -15,6 +15,12 @@ function validateEmail(evt) {
   const atpos = emailVal.indexOf("@");
   const dotpos = emailVal.lastIndexOf(".");
 
+  emailVal = validateEmail();
+  if (emailVal === false) {
+    evt.returnValue = false;
+    return false;
+  }
+
   if (atpos < 1) {
     alert(
       "Your email must include an @ symbol, which must not be at the beginning of the email."
