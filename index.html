@@ -24,11 +24,11 @@
           <input required name="username" type="text" minLength= "4" pattern="^(?!.*(.).*\1)[a-zA-Z0-9]{2,}$" placeholder="Username" />
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
-          <input name="email" type="text" placeholder="Email" />
+          <input name="email" type="email" pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$" required placeholder="Email" />
           <span class="input-icon"><i class="fa-solid fa-envelope"></i></span
           ><br />
 
-          <input name="password" type="text" placeholder="Password" />
+          <input name="password" type="text" minlength="12" placeholder="Password" />
           <span class="input-icon"><i class="fa-solid fa-key"></i></span><br />
 
           <input
